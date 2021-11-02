@@ -1,0 +1,10 @@
+<form method="POST"> {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+<h1>Comments</h1>
+<ul>
+    {% for comment in comments%}
+    <li>{{ comment }}</li>
+    {% endfor %}
+</ul>

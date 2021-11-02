@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>{{ name }}'s Gallery</title>
+        <script>
+            function changePic(id){
+                document.getElementById('bpic').src = document.getElementById("pic" + id).src;
+            }
+
+        </script>
+	</head>
+	<body>
+		<table border=10 width="100%" height="100%">
+			<tr width="100%" height="70%" border="2">
+				<td>
+					<p align="center" style="margin: 10px;">
+						<image id="bpic" src="https://s4.uupload.ir/files/1_8wrm.jpg">
+					</p>
+				</td>
+				<td>
+					<p align='center'><a href="./comment">comment</a></p>
+				</td>
+				<td>
+					<p align='center'><a href="./story">story</a></p>
+				</td>
+			</tr>
+			
+			<tr width="100%" height="30%" border="2">
+				<td colspan="3">
+					<p align="center">
+						<image id="pic0" src="https://s4.uupload.ir/files/1_8wrm.jpg" width="200" onmousedown="changePic(0)">
+						<image id="pic1" src="https://s4.uupload.ir/files/2_7mh3.jpg" width="200" onMousedown="changePic(1)">
+						<image id="pic2" src="https://s4.uupload.ir/files/3_xj60.jpg" width="200" onMousedown="changePic(2)">
+						<image id="pic3" src="https://s4.uupload.ir/files/4_3cn7.jpg" width="200" onMousedown="changePic(3)">
+						<image id="pic4" src="https://s4.uupload.ir/files/5_lle3.jpg" width="200" onMousedown="changePic(4)">
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
