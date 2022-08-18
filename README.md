@@ -1,2 +1,2 @@
-# Cloud Computing Homework-1
+# Cloud Computing website
 A website using some cloud services.
